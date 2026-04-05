@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className="h-full" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="92qlwSWYxDrocb0Kt0eMdDQH-3gck8BqjFA-I82aYeM" />
         <meta name="google-adsense-account" content="ca-pub-2678965337292925" />
         <script
           async
