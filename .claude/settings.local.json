@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(bun --version)",
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(git clone:*)",
+      "Bash(~/.npm-global/bin/bun --version)",
+      "Bash(npx bun:*)",
+      "Bash(bash setup:*)",
+      "WebSearch",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Read(//c/Users/User/Desktop/projects/**)",
+      "Bash(npx create-next-app@latest new-blog-temp --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cp -r \"C:/Users/User/Desktop/projects/new-blog-temp/app\" \"C:/Users/User/Desktop/projects/new blog/\")",
+      "Bash(cp -r \"C:/Users/User/Desktop/projects/new-blog-temp/public\" \"C:/Users/User/Desktop/projects/new blog/\")",
+      "Bash(cp \"C:/Users/User/Desktop/projects/new-blog-temp/next.config.ts\" \"C:/Users/User/Desktop/projects/new blog/\")",
+      "Bash(cp \"C:/Users/User/Desktop/projects/new-blog-temp/next-env.d.ts\" \"C:/Users/User/Desktop/projects/new blog/\")",
+      "Bash(cp \"C:/Users/User/Desktop/projects/new-blog-temp/package.json\" \"C:/Users/User/Desktop/projects/new blog/\")",
+      "Bash(curl -L \"https://github.com/orioncactus/pretendard/releases/download/v1.3.9/Pretendard-1.3.9.zip\" -o /tmp/pretendard.zip)",
+      "Read(//c/tmp/**)",
+      "Bash(unzip -q pretendard.zip -d pretendard_extracted)",
+      "Read(//tmp/**)",
+      "Bash(cp /tmp/pretendard_extracted/web/static/woff2/Pretendard-Regular.woff2 \"C:/Users/User/Desktop/projects/new blog/public/fonts/\")",
+      "Bash(cp /tmp/pretendard_extracted/web/static/woff2/Pretendard-Medium.woff2 \"C:/Users/User/Desktop/projects/new blog/public/fonts/\")",
+      "Bash(cp /tmp/pretendard_extracted/web/static/woff2/Pretendard-SemiBold.woff2 \"C:/Users/User/Desktop/projects/new blog/public/fonts/\")",
+      "Bash(cp /tmp/pretendard_extracted/web/static/woff2/Pretendard-Bold.woff2 \"C:/Users/User/Desktop/projects/new blog/public/fonts/\")",
+      "Bash(rm -rf /tmp/pretendard_extracted /tmp/pretendard.zip)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
