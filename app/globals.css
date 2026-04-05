@@ -171,3 +171,32 @@ body {
   border-top: 1px solid var(--color-border);
   margin: 2.5rem 0;
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.9375rem;
+}
+
+.prose thead tr {
+  background: var(--color-badge-bg);
+}
+
+.prose th {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+}
+
+.prose td {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+.prose tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-border) 30%, transparent);
+}
