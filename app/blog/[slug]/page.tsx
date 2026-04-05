@@ -2,6 +2,7 @@ import { getAllPostSlugs, getPostBySlug, formatDate } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { Metadata } from "next";
+import remarkGfm from "remark-gfm";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -58,7 +59,7 @@ export default async function PostPage({ params }: Props) {
       </header>
 
       <div className="prose" style={{ maxWidth: "100%" }}>
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
     </article>
   );
