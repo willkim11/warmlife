@@ -4,6 +4,7 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,
+  exclude: ["/robots.txt", "/sitemap.xml"],
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },

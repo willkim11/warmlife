@@ -4,7 +4,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "글 목록",
-  description: "전체 글 목록입니다.",
+  description: "생활비 절약, 정부지원금, 보험, 주거 제도 관련 글 목록입니다.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogPage() {

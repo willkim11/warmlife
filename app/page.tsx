@@ -9,10 +9,10 @@ export default function HomePage() {
     <div>
       <section className="mb-12">
         <h1 className="text-3xl font-bold mb-3" style={{ color: "var(--color-foreground)" }}>
-          따뜻한 일상 🌿
+          따뜻한 일상
         </h1>
         <p className="text-lg leading-relaxed" style={{ color: "var(--color-muted)" }}>
-          세상 모든 정보를 빠르게 알려드립니다.
+          생활비 절약, 정부지원금, 보험, 주거 제도를 공식 출처와 함께 차분히 정리합니다.
         </p>
       </section>
 

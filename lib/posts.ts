@@ -8,9 +8,11 @@ export interface PostMeta {
   slug: string;
   title: string;
   date: string;
+  updated: string;
   description: string;
   category: string;
   published: boolean;
+  canonicalSlug?: string;
 }
 
 export interface Post extends PostMeta {
@@ -52,9 +54,11 @@ export function getPostMeta(slug: string): PostMeta | null {
     slug,
     title: data.title ?? slug,
     date: data.date ?? "",
+    updated: data.updated ?? data.date ?? "",
     description: data.description ?? "",
     category: data.category ?? "uncategorized",
     published: data.published !== false,
+    canonicalSlug: data.canonicalSlug,
   };
 }
 
@@ -74,9 +78,11 @@ export function getPostBySlug(slug: string): Post | null {
     slug,
     title: data.title ?? slug,
     date: data.date ?? "",
+    updated: data.updated ?? data.date ?? "",
     description: data.description ?? "",
     category: data.category ?? "uncategorized",
     published: true,
+    canonicalSlug: data.canonicalSlug,
     content,
   };
 }

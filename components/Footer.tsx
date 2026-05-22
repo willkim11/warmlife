@@ -8,6 +8,15 @@ export default function Footer() {
     >
       <div className="max-w-[680px] mx-auto px-5 py-6 text-sm text-center space-y-2">
         <div className="flex items-center justify-center gap-4">
+          <Link href="/contact" className="hover:opacity-70 transition-opacity">
+            문의
+          </Link>
+          <Link href="/disclaimer" className="hover:opacity-70 transition-opacity">
+            면책 안내
+          </Link>
+          <Link href="/terms" className="hover:opacity-70 transition-opacity">
+            이용약관
+          </Link>
           <Link href="/privacy-policy" className="hover:opacity-70 transition-opacity">
             개인정보처리방침
           </Link>

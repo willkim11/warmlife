@@ -24,6 +24,9 @@ export default function Header() {
             <Link href="/about" className="hover:opacity-70 transition-opacity">
               소개
             </Link>
+            <Link href="/contact" className="hover:opacity-70 transition-opacity">
+              문의
+            </Link>
           </nav>
           <ThemeToggle />
         </div>
