@@ -5,6 +5,14 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   exclude: ["/robots.txt", "/sitemap.xml"],
+  additionalPaths: async () => [
+    {
+      loc: "/blog",
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: new Date().toISOString(),
+    },
+  ],
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },
